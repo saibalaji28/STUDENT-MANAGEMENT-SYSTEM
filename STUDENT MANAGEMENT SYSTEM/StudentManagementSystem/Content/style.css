@@ -1,0 +1,311 @@
+/* =========================================================
+   Student Management System - style.css
+   A clean, modern, "college-project" friendly stylesheet.
+   ========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #2b2d42;
+}
+
+/* ---------- Navigation bar ---------- */
+.navbar {
+    background-color: #2c3e6b;
+    padding: 14px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.navbar .brand {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.navbar .nav-links a {
+    color: #dfe4f0;
+    text-decoration: none;
+    margin-left: 22px;
+    font-size: 15px;
+    font-weight: 500;
+    transition: color 0.2s ease-in-out;
+}
+
+.navbar .nav-links a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* ---------- Page container ---------- */
+.page-container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px 40px 20px;
+}
+
+/* ---------- Hero / Dashboard ---------- */
+.hero {
+    background: linear-gradient(135deg, #2c3e6b 0%, #3f5aa6 100%);
+    color: #ffffff;
+    border-radius: 12px;
+    padding: 45px 35px;
+    text-align: center;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+}
+
+.hero h1 {
+    margin: 0 0 10px 0;
+    font-size: 32px;
+}
+
+.hero p {
+    margin: 0;
+    font-size: 16px;
+    color: #e4e8f5;
+}
+
+.hero-buttons {
+    margin-top: 22px;
+}
+
+.hero-buttons .btn {
+    margin: 0 8px;
+}
+
+/* ---------- Stat cards ---------- */
+.stats-row {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.stat-card {
+    flex: 1;
+    min-width: 220px;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 22px 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    border-left: 5px solid #3f5aa6;
+    text-align: center;
+}
+
+.stat-card .stat-number {
+    font-size: 34px;
+    font-weight: 700;
+    color: #2c3e6b;
+}
+
+.stat-card .stat-label {
+    margin-top: 6px;
+    color: #6b7280;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+}
+
+/* ---------- Cards / panels ---------- */
+.card {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 28px 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    margin-bottom: 24px;
+}
+
+.card h2 {
+    margin-top: 0;
+    color: #2c3e6b;
+    font-size: 22px;
+    border-bottom: 2px solid #eef1f8;
+    padding-bottom: 12px;
+    margin-bottom: 22px;
+}
+
+/* ---------- Forms ---------- */
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #333a56;
+    font-size: 14px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #cdd3e0;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: #fbfcfe;
+    transition: border-color 0.2s ease-in-out;
+}
+
+.form-control:focus {
+    border-color: #3f5aa6;
+    outline: none;
+    background-color: #ffffff;
+}
+
+.field-error {
+    color: #d64545;
+    font-size: 12.5px;
+    margin-top: 4px;
+    display: block;
+}
+
+/* ---------- Buttons ---------- */
+.btn {
+    display: inline-block;
+    padding: 10px 22px;
+    border-radius: 6px;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform 0.08s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+.btn:hover {
+    opacity: 0.92;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.btn-primary {
+    background-color: #3f5aa6;
+    color: #ffffff;
+}
+
+.btn-success {
+    background-color: #2e9e5b;
+    color: #ffffff;
+}
+
+.btn-secondary {
+    background-color: #e4e7ef;
+    color: #2b2d42;
+}
+
+.btn-danger {
+    background-color: #d64545;
+    color: #ffffff;
+}
+
+.btn-warning {
+    background-color: #e8a53b;
+    color: #ffffff;
+}
+
+.btn-sm {
+    padding: 6px 14px;
+    font-size: 13px;
+}
+
+.btn-row {
+    margin-top: 24px;
+}
+
+.btn-row .btn {
+    margin-right: 10px;
+}
+
+/* ---------- Alerts / messages ---------- */
+.alert {
+    padding: 13px 18px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    font-size: 14.5px;
+    font-weight: 500;
+}
+
+.alert-success {
+    background-color: #e3f7e9;
+    color: #1e7a41;
+    border: 1px solid #b6ecc6;
+}
+
+.alert-danger {
+    background-color: #fdeaea;
+    color: #b12b2b;
+    border: 1px solid #f5c2c2;
+}
+
+/* ---------- Table / GridView ---------- */
+.grid-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14.5px;
+}
+
+.grid-table th {
+    background-color: #2c3e6b;
+    color: #ffffff;
+    text-align: left;
+    padding: 12px 14px;
+}
+
+.grid-table td {
+    padding: 11px 14px;
+    border-bottom: 1px solid #eef1f8;
+}
+
+.grid-table tr:hover td {
+    background-color: #f6f8fd;
+}
+
+.grid-table tr:last-child td {
+    border-bottom: none;
+}
+
+/* ---------- Footer ---------- */
+.footer {
+    text-align: center;
+    padding: 18px;
+    color: #8b90a3;
+    font-size: 13px;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 700px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar .nav-links {
+        margin-top: 10px;
+    }
+
+    .navbar .nav-links a {
+        margin-left: 0;
+        margin-right: 18px;
+    }
+
+    .stats-row {
+        flex-direction: column;
+    }
+
+    .card {
+        padding: 20px;
+    }
+}
